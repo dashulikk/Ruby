@@ -1,0 +1,2 @@
+class AvailablePilot < ApplicationRecord
+end

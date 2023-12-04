@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AirlineApp</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/png" href="https://res.cloudinary.com/dqgini3rw/image/upload/v1669001502/icon_jlosco.png">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!--For Bootstrap-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "baggages" %>
+    <%= stylesheet_link_tag "airports" %>
+    <%= stylesheet_link_tag "planes" %>
+    <%= stylesheet_link_tag "application" %>
+  </head>
+
+  <body>
+    <header>
+      <span><img src="https://res.cloudinary.com/dqgini3rw/image/upload/v1669001502/icon_jlosco.png" alt="airline icon"></span>
+      <span><a href="<%= airports_path %>">Airports</a></span>
+      <span><a href="<%= planes_path %>">Planes</a></span>
+      <span><a href="<%= baggages_path %>">Baggages</a></span>
+    </header>
+    <%= yield %>
+  </body>
+</html>

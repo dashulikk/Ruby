@@ -1,0 +1,15 @@
+<main>
+  <table>
+    <tr>
+      <th>Airport</th>
+      <th>Planes</th>
+    </tr>
+    <% @airports.each do |airport| %>
+      <% planes = airport.planes %>
+      <tr>
+        <td><%= airport.name %></td>
+
+      </tr>
+    <% end %>
+  </table>
+</main>
